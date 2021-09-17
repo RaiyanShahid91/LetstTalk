@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.PublicGroup"
+    android:background="@color/white">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/top"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:id="@+id/group"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Group"
+                android:textColor="@color/darkblue"
+                android:textSize="16sp"
+                android:id="@+id/groupText"
+                android:textStyle="bold"
+                android:gravity="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:id="@+id/groupView"
+                android:background="@color/darkblue"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:id="@+id/publicgroup"
+            android:layout_marginLeft="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Public Group"
+                android:textColor="@color/darkgrey"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:id="@+id/publicgroupText"
+                android:gravity="center"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:id="@+id/publicgroupView"
+                android:background="@color/darkgrey"
+                android:layout_marginTop="4dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayoutgroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:background="@color/white"></FrameLayout>
+
+</RelativeLayout>
+</FrameLayout>

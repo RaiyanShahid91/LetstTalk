@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".publicGroup.CreatePublicGroup">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="40dp"
+        app:cardBackgroundColor="@color/white">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/back"
+                app:tint="@color/black"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create Public Group"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+                </TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@color/white" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:orientation="vertical"
+                        android:layout_centerInParent="true">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/groupImag"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:src="@drawable/avatar"
+                                app:civ_border_color="@color/darkblue"
+                                app:civ_border_width="1dp" />
+                            <LinearLayout
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:id="@+id/selectImage"
+                                android:background="@drawable/profile_edit"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentBottom="true">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="17dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/edit_vector"
+                                    android:tint="@color/white"
+                                    tools:ignore="UseAppTint" />
+                            </LinearLayout>
+                        </RelativeLayout> </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Group Name"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textinput_groupname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_group_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:inputType="textEmailAddress"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="#CBCDCD"
+                            android:textSize="14sp"
+                            android:theme="@style/ThemeOverlay.Button.Darkblue"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Website / url"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textinput_groupurl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/url"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:inputType="textEmailAddress"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="#CBCDCD"
+                            android:textSize="14sp"
+                            android:theme="@style/ThemeOverlay.Button.Darkblue"
+                            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description about your Group"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        />
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textinput_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        app:hintTextColor="@color/black">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edt_group_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:inputType="textEmailAddress"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:textColorHint="#CBCDCD"
+                            android:textSize="14sp"
+                            android:theme="@style/ThemeOverlay.Button.Darkblue"
+                            tools:ignore="SpeakableTextPresentCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Topic (Choose any one)"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:padding="5dp"
+                        android:layout_marginTop="10dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="310dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <GridView
+                            android:id="@+id/gridview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:horizontalSpacing="4dp"
+                            android:numColumns="2"
+                            tools:listitem="@layout/layout_publicgroup_topic"
+                            android:layout_gravity="center"
+                            android:fastScrollEnabled="true"
+                            android:verticalSpacing="4dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/group_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:backgroundTint="@color/darkblue"
+                        android:fontFamily="sans-serif-condensed-medium"
+                        android:text="Create Group"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:textAllCaps="false"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

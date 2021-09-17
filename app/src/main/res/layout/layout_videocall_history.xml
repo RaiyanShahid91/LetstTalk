@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="20dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="#FAF9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meeting Code : "
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:maxLength="8"
+            android:text="01202145265222223"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/meetingcode"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*******"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/copy_vector"
+            app:tint="@color/black"
+            android:layout_marginLeft="8dp"
+            android:id="@+id/copied"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created on : "
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15/202/2021"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/meetingcreateddate"
+            android:padding="5dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Join"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:id="@+id/join"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/darkblue"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:id="@+id/share"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="7dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textAllCaps="false"
+            android:id="@+id/delete"
+            android:backgroundTint="#C10606"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

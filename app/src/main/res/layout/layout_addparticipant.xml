@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/suugestion_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Friend name"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/suggestion_image"
+        app:layout_constraintStart_toEndOf="@+id/suggestion_image"
+        app:layout_constraintTop_toTopOf="@+id/suggestion_image"
+        app:layout_constraintVertical_bias="0.49" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/suggestion_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/avatar"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/darkblue"
+        app:layout_constraintEnd_toStartOf="@+id/suugestion_profile"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <Button
+        android:id="@+id/followbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/darkblue"
+        android:text="Add"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/suggestion_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

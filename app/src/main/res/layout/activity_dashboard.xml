@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.DashboardActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/top"
+        android:layout_alignParentTop="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/option_vector"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/moreoprion"
+                    android:visibility="gone"
+                    app:tint="@color/black" />
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="35dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar"
+                    app:civ_border_color="@color/darkblue"
+                    app:civ_border_width="1dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/profileImage"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cardView"
+        android:layout_below="@id/top"
+        android:background="@color/white"></FrameLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            android:id="@+id/cardView"
+            android:layout_margin="4dp"
+            android:layout_alignParentBottom="true">
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomnavigation2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightpurple"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:menu="@menu/bottom_menu" />
+        </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+
+

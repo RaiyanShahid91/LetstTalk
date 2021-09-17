@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="1dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/groupImage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/avatar"
+            app:civ_border_width="1dp"
+            app:civ_border_color="@color/darkblue"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/groupname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="3dp"
+                android:text="Group Name"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/lastmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="3dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0.5"
+            android:fontFamily="sans-serif-medium"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/darkblue" />
+
+</LinearLayout>

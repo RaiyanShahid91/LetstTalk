@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.GroupFragments">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            tools:listitem="@layout/layout_groups" />
+        <LinearLayout
+            android:id="@+id/Group"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="14dp"
+            android:background="@drawable/profile_edit"
+            app:fabCustomSize="50dp">
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/add_status_vector"
+                app:tint="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

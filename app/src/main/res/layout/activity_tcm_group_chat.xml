@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightpurple"
+    tools:context=".publicGroup.TcmGroupChat">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:elevation="80dp"
+        app:cardBackgroundColor="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                app:tint="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/groupProfile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:civ_border_color="@color/darkblue"
+                    app:civ_border_width="1dp"
+                    android:src="@drawable/avatar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/groupname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asif TCM"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/totalUsers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Group member"
+                    android:textColor="@color/darkgrey"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/top"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        tools:listitem="@layout/layout_tcm_group_left" />
+
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignParentBottom="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="50dp"
+            android:layout_toStartOf="@+id/senttext_btn"
+            android:layout_toLeftOf="@+id/senttext_btn">
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/sender_imagebtn"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    app:srcCompat="@drawable/ic_camera"
+                    app:tint="#676767"
+                    android:layout_gravity="center"
+                    tools:ignore="VectorDrawableCompat" />
+
+                <EditText
+                    android:id="@+id/edit_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="Start typing...."
+                    android:inputType="textImeMultiLine"
+                    android:lines="6"
+                    android:textSize="14sp"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:minHeight="48dp">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <ImageButton
+            android:id="@+id/senttext_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/circle_green"
+            android:src="@drawable/ic_send"
+            tools:ignore="SpeakableTextPresentCheck"
+            app:tint="@color/white"></ImageButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

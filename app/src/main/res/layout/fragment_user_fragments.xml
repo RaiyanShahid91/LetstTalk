@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.UserFragments"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/top"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="4dp"
+                android:layout_margin="3dp"
+                app:cardElevation="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/avatar" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:text="Raiyan Shahid"
+                                android:padding="5dp"
+                                android:layout_gravity="center"
+                                android:id="@+id/name"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:id="@+id/dob"
+                                android:text="15/20/2020"
+                                android:layout_gravity="center"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:padding="5dp"
+                                android:text="Email"
+                                android:layout_gravity="center"
+                                android:id="@+id/email"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="14sp"
+                                android:text="Hey there i am using "
+                                android:layout_gravity="center"
+                                android:id="@+id/bio"
+                                android:padding="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="7dp"
+            android:layout_below="@id/top"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/editprofile"
+            android:background="@drawable/border_design"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/editprofile"
+            android:id="@+id/fourth"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/post"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Post"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:id="@+id/postText"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/postView"
+                    android:background="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/download">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saved"
+                    android:gravity="center"
+                    android:id="@+id/downloadText"
+                    android:padding="3dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/darkgrey"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/downloadView"
+                    android:background="@color/darkgrey" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/framelayoutprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/fourth"
+            ></FrameLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

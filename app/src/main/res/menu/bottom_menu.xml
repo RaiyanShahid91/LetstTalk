@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/home_vector"
+        android:title="Home"
+        android:id="@+id/home"/>
+    <item
+        android:icon="@drawable/chat_vector"
+        android:title="Chat"
+        android:id="@+id/chat"/>
+    <item
+        android:icon="@drawable/group_vector"
+        android:title="Group"
+        android:id="@+id/group"/>
+    <item
+        android:icon="@drawable/video"
+        android:title="Video"
+        android:id="@+id/video"/>
+    <item
+        android:icon="@drawable/person_vector"
+        android:title="Users"
+        android:id="@+id/users"/>
+</menu>
